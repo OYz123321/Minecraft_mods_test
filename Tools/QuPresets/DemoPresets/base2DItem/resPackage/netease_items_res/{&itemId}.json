@@ -1,0 +1,13 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "{&f_itemId}"
+        },
+        "description": {
+            "category": "Equipment",
+            "identifier": "{&itemId}",
+            "register_to_create_menu": true
+        }
+    }
+}

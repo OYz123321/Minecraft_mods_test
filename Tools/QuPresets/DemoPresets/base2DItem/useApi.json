@@ -1,0 +1,12 @@
+[
+    [
+        "addZhLang",
+        "item.{&itemId}.name",
+        "{&itemName}"
+    ],
+    [
+        "setItemTexture",
+        "{&f_itemId}",
+        "{&texture}"
+    ]
+]

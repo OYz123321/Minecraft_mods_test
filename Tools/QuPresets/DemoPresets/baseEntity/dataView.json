@@ -1,0 +1,72 @@
+[
+    {
+        "text": "实体标识符",
+        "var": "__identifier__",
+        "f_var": "f__identifier__"
+    },
+    {
+        "text": "中文名称",
+        "var": "__entityName__",
+        "default": "未命名实体"
+    },
+    {
+        "text": "使用模型",
+        "use": "@models",
+        "var": "useModel",
+        "default": "geometry.armor_stand"
+    },
+    {
+        "text": "使用纹理",
+        "use": "@textures",
+        "var": "useSkin",
+        "default": "textures/entity/armor_stand"
+    },
+    {
+        "text": "近战动画",
+        "use": "@animations",
+        "var": "on_attack",
+        "default": "animation.zero_service_base.none"
+    },
+    {
+        "text": "平息动画",
+        "use": "@animations",
+        "var": "rest",
+        "default": "animation.zero_service_base.none"
+    },
+    {
+        "text": "日常移动动画",
+        "use": "@animations",
+        "var": "move_on_base",
+        "default": "animation.zero_service_base.none"
+    },
+    {
+        "text": "近战移动动画",
+        "use": "@animations",
+        "var": "move_on_melee",
+        "default": "animation.zero_service_base.none"
+    },
+    {
+        "text": "远程移动动画",
+        "use": "@animations",
+        "var": "move_on_ranged",
+        "default": "animation.zero_service_base.none"
+    },
+    {
+        "text": "有攻击目标动画",
+        "use": "@animations",
+        "var": "has_target",
+        "default": "animation.zero_service_base.none"
+    },
+    {
+        "text": "无攻击目标动画",
+        "use": "@animations",
+        "var": "not_has_target",
+        "default": "animation.zero_service_base.none"
+    },
+    {
+        "text": "远程追击动画",
+        "use": "@animations",
+        "var": "ranged_has_target",
+        "default": "animation.zero_service_base.none"
+    }
+]

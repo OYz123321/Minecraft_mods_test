@@ -1,0 +1,133 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.zero_service_base.attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"transitions": [
+						{
+							"attack": "variable.attack_time > 0"
+						}
+					]
+				},
+				"attack": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"on_attack"
+					],
+					"transitions": [
+						{
+							"default": "variable.attack_time <= 0 && (variable.service_attack_must_end ? query.any_animation_finished : 1.0)"
+						}
+					]
+				}
+			}
+		},
+
+		"controller.animation.zero_service_base.has_target": {
+			"initial_state": "not_has_target",
+			"states": {
+				"not_has_target": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"not_has_target"
+					],
+					"transitions": [
+						{
+							"has_target": "query.has_target && query.mark_variant == 0"
+						},
+						{
+							"ranged_has_target": "query.has_target && query.mark_variant == 1"
+						}
+					]
+				},
+				"has_target": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"has_target"
+					],
+					"transitions": [
+						{
+							"not_has_target": "!query.has_target"
+						},
+						{
+							"ranged_has_target": "query.has_target && query.mark_variant == 1"
+						}
+					]
+				},
+				"ranged_has_target": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"ranged_has_target"
+					],
+					"transitions": [
+						{
+							"not_has_target": "!query.has_target"
+						},
+						{
+							"has_target": "query.has_target && query.mark_variant == 0"
+						}
+					]
+				}
+			}
+		},
+
+		"controller.animation.zero_service_base.move": {
+			"initial_state": "move_on_base",
+			"states": {
+				"move_on_base": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"move_on_base"
+					],
+					"transitions": [
+						{
+							"move_on_melee": "query.has_target && query.mark_variant == 0"
+						},
+						{
+							"move_on_ranged": "query.has_target && query.mark_variant == 1"
+						}
+					]
+				},
+				"move_on_melee": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"move_on_melee"
+					],
+					"transitions": [
+						{
+							"move_on_base": "!query.has_target"
+						},
+						{
+							"move_on_ranged": "query.has_target && query.mark_variant == 1"
+						}
+					]
+				},
+				"move_on_ranged": {
+					"blend_transition": 0.2,
+					"blend_via_shortest_path": true,
+					"animations": [
+						"move_on_ranged"
+					],
+					"transitions": [
+						{
+							"move_on_base": "!query.has_target"
+						},
+						{
+							"move_on_melee": "query.has_target && query.mark_variant == 0"
+						}
+					]
+				}
+			}
+		}
+	}
+}

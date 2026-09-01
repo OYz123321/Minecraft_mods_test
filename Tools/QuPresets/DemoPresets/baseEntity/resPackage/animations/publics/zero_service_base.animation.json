@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.zero_service_base.none": {
+			"loop": false,
+			"bones": {
+				"__none__": {
+					"scale": 1.0
+				}
+			}
+		},
+		"animation.zero_service_base.look_at_target": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": ["query.target_x_rotation", "query.target_y_rotation", 0]
+				}
+			}
+		}
+	}
+}

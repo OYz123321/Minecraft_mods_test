@@ -1,0 +1,10 @@
+[
+    [
+        "registerServer",
+        "QuPresets.HurtTextRender.Server"
+    ],
+    [
+        "registerClient",
+        "QuPresets.HurtTextRender.Client"
+    ]
+]

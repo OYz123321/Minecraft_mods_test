@@ -1,0 +1,20 @@
+[
+    [
+        "addZhLang",
+        "item.spawn_egg.entity.{&entityId}.name",
+        "{&show_text}"
+    ],
+    [
+        "setItemTexture",
+        "{&fentityId}",
+        "{&tex}"
+    ],
+    [
+        "print",
+        "var组件提示 \"minecraft:mark_variant\":{\"value\": 0}"
+    ],
+    [
+        "print",
+        "var客户端节点 query.mark_variant"
+    ]
+]

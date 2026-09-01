@@ -1,0 +1,56 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "{&__identifier__}",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "textures": {
+                "default": "{&useSkin}"
+            },
+            "geometry": {
+                "default": "{&useModel}"
+            },
+            "animations": {
+                "__attack__": "controller.animation.zero_service_base.attack",
+                "__has_target__": "controller.animation.zero_service_base.has_target",
+                "__move_controller__": "controller.animation.zero_service_base.move",
+                "__look_at_target__": "animation.zero_service_base.look_at_target",
+                "on_attack": "{&on_attack}",                            // 近战
+                "rest": "{&rest}",                                      // 平息
+                "move_on_base": "{&move_on_base}",                      // 日常移动
+                "move_on_melee": "{&move_on_melee}",                    // 近战移动
+                "move_on_ranged": "{&move_on_ranged}",                  // 远程移动
+                "has_target": "{&has_target}",                          // 有目标
+                "not_has_target": "{&not_has_target}",                  // 无目标
+                "ranged_has_target": "{&ranged_has_target}"             // 远程追击
+            },
+            "spawn_egg": {
+                "base_color": "#d2d2d2",
+                "overlay_color": "#8f8f8f"
+            },
+            "scripts": {
+                "initialize": [
+                    "variable.service_move_speed_con = 1.0;",   // 移动动画校速 0.0则为禁用
+                    "variable.service_move_speed_mut = 0.24;",  // 控制移动动画的速率
+                    "variable.service_attack_must_end = 0.0;"   // 攻击动画必须完整结束
+                ],
+                "pre_animation": [
+                    "variable.service_speed_ratio = math.min(query.modified_move_speed/variable.service_move_speed_mut, 1.0);"
+                ],
+                "animate": [
+                    "__attack__",
+                    "__look_at_target__",
+                    { "rest": "variable.service_move_speed_con ? 1.0-variable.service_speed_ratio : 1.0" },
+                    { "__move_controller__": "variable.service_move_speed_con ? variable.service_speed_ratio : 1.0" },
+                    "__has_target__"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.zero_service_base"
+            ],
+            "enable_attachables": true
+        }
+    }
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "text": "虚实体标识符",
+        "var": "entityId",
+        "f_var": "fentityId"
+    },
+    {
+        "text": "绑定实体标识符",
+        "var": "bind_entityId"
+    },
+    {
+        "text": "执行events",
+        "var": "event",
+        "default": ""
+    },
+    {
+        "text": "刷怪蛋显示文本",
+        "var": "show_text"
+    },
+    {
+        "text": "刷怪蛋引用纹理",
+        "use": "@textures",
+        "var": "tex",
+        "default": "textures/items/apple"
+    }
+]

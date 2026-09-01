@@ -1,0 +1,40 @@
+[
+    {
+        "text": "物品标识符",
+        "var": "itemId",
+        "f_var": "f_itemId"
+    },
+    {
+        "text": "物品中文名称",
+        "var": "itemName"
+    },
+    {
+        "text": "物品2D纹理",
+        "var": "texture",
+        "use": "@textures"
+    },
+    {
+        "text": "武器竖立显示 (false)",
+        "var": "isWeapon",
+        "type": "bool",
+        "default": "false"
+    },
+    {
+        "text": "最大堆叠数量 (64)",
+        "var": "max_stack_size",
+        "type": "int",
+        "default": "64"
+    },
+    {
+        "text": "启用附魔效果 (false)",
+        "var": "foil",
+        "type": "bool",
+        "default": "false"
+    },
+    {
+        "text": "放置副手 (true)",
+        "var": "allow_offhand",
+        "type": "bool",
+        "default": "true"
+    }
+]

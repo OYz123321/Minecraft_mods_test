@@ -1,0 +1,21 @@
+{
+    "format_version": "1.13.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "{&entityId}",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "{&entityId}"
+        },
+        "components": {
+            "minecraft:transformation": {
+                "into": "{&bind_entityId}<{&event}>",
+                "delay": {
+                    "value": 0
+                }
+            }
+        },
+        "events": {}
+    }
+}

@@ -1,0 +1,12 @@
+[
+    [
+        "addZhLang",
+        "entity.{&__identifier__}.name",
+        "{&__entityName__}"
+    ],
+    [
+        "addZhLang",
+        "item.spawn_egg.entity.{&__identifier__}.name",
+        "生成 {&__entityName__}"
+    ]
+]
