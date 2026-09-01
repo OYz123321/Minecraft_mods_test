@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Auto generated resource pack",
+        "name": "A4DB45FF7AAB4C5CA0021A1E15FB00ER",
+        "uuid": "d4db45ff-7aab-4c5c-a002-1a1e15fb00ef",
+        "version": [0, 0, 1],
+        "min_engine_version": [1, 20, 0]
+    },
+    "modules": [
+        {
+            "description": "Auto generated resource pack",
+            "type": "resources",
+            "uuid": "6045c982-480a-44c4-a35d-2db956b71f53",
+            "version": [0, 0, 1]
+        }
+    ]
+}

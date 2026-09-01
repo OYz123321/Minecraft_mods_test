@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Auto generated behavior pack",
+        "name": "AC913B20296C4FA6AA6748061D1E9A2B",
+        "uuid": "fc913b20-296c-4fa6-aa67-48061d1e9a29",
+        "version": [0, 0, 1],
+        "min_engine_version": [1, 20, 0]
+    },
+    "modules": [
+        {
+            "description": "Auto generated behavior pack",
+            "type": "data",
+            "uuid": "dfbd5848-761d-4b3b-b911-25ff3e8c2ce9",
+            "version": [0, 0, 1]
+        }
+    ]
+}

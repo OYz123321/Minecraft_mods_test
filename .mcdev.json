@@ -1,0 +1,23 @@
+{
+    "auto_hot_reload_materials": false,
+    "auto_hot_reload_mods": true,
+    "auto_hot_reload_particles": false,
+    "auto_hot_reload_shaders": false,
+    "auto_hot_reload_ui": false,
+    "auto_join_game": true,
+    "enable_cheats": true,
+    "game_executable_path": "D:/MCStudioDownload/game/MinecraftPE_Netease/3.8.0.313229/Minecraft.Windows.exe",
+    "game_mode": 1,
+    "include_debug_mod": true,
+    "included_mod_dirs": [
+        "./"
+    ],
+    "keep_inventory": true,
+    "log_protocol": 0,
+    "reset_world": false,
+    "world_folder_name": "MC_DEV_WORLD",
+    "world_name": "MC_DEV_WORLD",
+    "world_seed": null,
+    "world_source_path": "auto",
+    "world_type": 1
+}
